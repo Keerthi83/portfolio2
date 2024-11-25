@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .bio-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .bio-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .bio-section .bio {
+            flex: 1;
+        }
+
+        .bio h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .bio p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .portfolio-gallery {
+            margin-top: 40px;
+        }
+
+        .portfolio-gallery h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .portfolio-gallery .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-gallery .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px 0;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Creative Portfolio</h1>
+        </header>
+
+        <section class="bio-section">
+            <img src="C:\Users\keert\Downloads\IMG_20241119_181342.jpg" alt=""C:\Users\keert\Downloads\IMG_20241119_181342.jpg"">
+            
+            <div class="bio">
+                <h2>KEERTHIVAISHALI.S</h2>
+                
+            </div>
+        </section>
+
+        <div class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#abilities">Key Abilities</a>
+            <a href="#skills">Key Abilities</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <section id="about" class="page">
+            <div class="content">
+                <h1>About Me</h1>
+                <p>Hello!"I am a third-year B.Tech IT student, passionate about technology, problem-solving, and continuously learning to innovate and contribute to the ever-evolving tech landscape.i am very much interested in fullstack web developement." Welcome to my portfolio!</p>
+                <a href="C:\Users\keert\Downloads\Image to PDF 20241125 21.40.47.pdf" download class="button">Download CV</a>
+            </div>
+        </section>
+        
+        <section id="abilities" class="page">
+            <div class="content">
+                <h1>Key Abilities</h1>
+                <ul>
+                    <li>Ability 1: Public speaker</li>
+                    <li>Ability 2: leadership quality</li>
+                    <li>Ability 3: fast learner</li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section id="education" class="page">
+            <div class="content">
+                <h1>Educational Qualifications</h1>
+                <ul>
+                    <li><strong>DEGREE:</strong>B.tech Information technology-8.87CCPA - KSR college of engineering - [2022-2026]</li>
+                    <li><strong>SSLC-:</strong> 90%- CSI girls higher sec school - [2021-2022]]</li>
+                    <li><strong>HSC:</strong>87% Nandha matric hr.sec.school - [2019-2020]</li>
+                    <li><strong>CERTFICATION:</strong> HDCA- V-guru - </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="page">
+            <div class="content">
+                <h1>Contact Me</h1>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    
+        
+
+        <footer>
+            &copy; 2024 keerthivaishali. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
